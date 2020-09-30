@@ -49,6 +49,97 @@ body {
 
 .header-top .header-navbar .header-menu a i {
   vertical-align: middle;
-  color: grey;
+  color: #999;
+}
+
+.jumbotron {
+  height: 450px;
+  color: #fff;
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 53%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 80px;
+  position: relative;
+}
+
+.jumbotron .jumbotron-credits {
+  font-size: 10px;
+  position: absolute;
+  bottom: 30px;
+  left: 130px;
+}
+
+.jumbotron .central-column {
+  height: 100%;
+  width: 40%;
+  margin-right: 50px;
+  padding-top: 30px;
+}
+
+.jumbotron .central-column h1 {
+  font-size: 29px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.jumbotron .central-column h3 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.jumbotron .central-column ul {
+  list-style: none;
+  font-size: 16px;
+}
+
+.jumbotron .central-column ul li {
+  margin-bottom: 10px;
+}
+
+.jumbotron .central-column ul li span {
+  color: #999;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.jumbotron .central-column .trial-button {
+  text-decoration: none;
+  color: #fff;
+  background-color: #5D5C59;
+  display: inline-block;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+.jumbotron .central-column .trial-button .trial-button__text {
+  border-right: 1px solid #fff;
+  padding: 0 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.jumbotron .central-column .trial-button .trial-button__text p {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.jumbotron .central-column .trial-button .trial-button__text span {
+  font-size: 12px;
+}
+
+.jumbotron .central-column .trial-button .trial-button__icon {
+  padding: 0 15px;
+  font-size: 25px;
+  vertical-align: middle;
+}
+
+.jumbotron .right-column {
+  background-color: yellow;
+  height: 100%;
+  width: calc(100% / 3);
 }
 
