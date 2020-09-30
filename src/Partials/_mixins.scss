@@ -1,0 +1,9 @@
+@mixin listInline {
+  display: flex;
+  list-style: none;
+}
+
+@mixin resetLink {
+  text-decoration: none;
+  color: $mainTextColor;
+}
