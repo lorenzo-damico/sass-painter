@@ -1,20 +1,20 @@
-
+.main-navbar {
+  height: 60px;
+  background-color: green;
+  position: sticky;
+  top: 0;
+  // opacity: 0;
+}
 .parallax-1 {
   height: 650px;
   background-image: url("../img/image-bg-02.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center bottom;
-  background-attachment: fixed;
+  @include setParallax;
 }
 
 
 .parallax-2 {
   height: 650px;
   background-image: url("../img/image-bg-01.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center bottom;
-  background-attachment: fixed;
+  @include setParallax;
 
 }

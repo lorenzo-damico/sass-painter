@@ -7,3 +7,10 @@
   text-decoration: none;
   color: $main-color;
 }
+
+@mixin setParallax {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;
+}
