@@ -6,106 +6,110 @@
 
 body {
   font-family: "Roboto", sans-serif;
-}
-
-.header-top {
-  background-color: #101010;
-  height: 100px;
   color: #fff;
 }
 
-.header-top .header-navbar {
-  font-size: 14px;
-  width: 95%;
-  height: 100%;
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  align-items: flex-end;
-}
-
-.header-top .header-navbar .logo {
-  margin-right: 60px;
-  margin-bottom: 20px;
-}
-
-.header-top .header-navbar .logo img {
-  width: 90px;
-}
-
-.header-top .header-navbar .header-menu {
-  display: flex;
-  list-style: none;
-  width: 100%;
-  justify-content: flex-start;
-}
-
-.header-top .header-navbar .header-menu a {
+a {
   text-decoration: none;
   color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.header {
+  background-color: #101010;
+}
+.header .header-top {
+  background-color: green;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 0;
+}
+.header .header-top .header-top--menu {
+  display: flex;
+  list-style: none;
+}
+.header .header-top .header-top--menu li {
+  padding: 0 15px;
+}
+.header .header-top .header-top--menu li a {
+  color: #999;
+  font-size: 12px;
+}
+.header .header-bottom {
+  display: flex;
+  align-items: center;
+}
+.header .header-bottom .logo {
+  margin-right: 20px;
+}
+.header .header-bottom .logo img {
+  width: 90px;
+}
+.header .header-bottom .header-bottom--menu {
+  display: flex;
+  list-style: none;
+}
+.header .header-bottom .header-bottom--menu a {
+  font-size: 14px;
   padding: 20px;
   display: inline-block;
 }
-
-.header-top .header-navbar .header-menu a i {
+.header .header-bottom .header-bottom--menu a i {
   vertical-align: middle;
   color: #999;
 }
 
 .jumbotron {
-  height: 450px;
-  color: #fff;
-  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
+  height: 470px;
+  background-image: url("../img/hero-painteressentials-7.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 53%;
+  background-position: 49%;
   display: flex;
   justify-content: flex-end;
   padding: 20px 80px;
   position: relative;
 }
-
 .jumbotron .jumbotron-credits {
   font-size: 10px;
   position: absolute;
-  bottom: 30px;
-  left: 130px;
+  bottom: 20px;
+  left: 180px;
 }
-
 .jumbotron .central-column {
   height: 100%;
   width: 40%;
   margin-right: 50px;
   padding-top: 30px;
 }
-
 .jumbotron .central-column h1 {
   font-size: 29px;
   font-weight: 400;
   margin-bottom: 15px;
 }
-
 .jumbotron .central-column h3 {
   font-size: 22px;
   font-weight: 400;
   margin-bottom: 20px;
 }
-
 .jumbotron .central-column ul {
   list-style: none;
   font-size: 16px;
 }
-
 .jumbotron .central-column ul li {
   margin-bottom: 10px;
 }
-
 .jumbotron .central-column ul li span {
   color: #999;
   font-weight: 700;
   font-size: 20px;
 }
-
 .jumbotron .central-column .trial-button {
   text-decoration: none;
   color: #fff;
@@ -114,32 +118,38 @@ body {
   padding: 10px 0;
   margin-top: 20px;
 }
-
 .jumbotron .central-column .trial-button .trial-button__text {
   border-right: 1px solid #fff;
   padding: 0 15px;
   display: inline-block;
   vertical-align: middle;
 }
-
 .jumbotron .central-column .trial-button .trial-button__text p {
   font-size: 14px;
   text-transform: uppercase;
 }
-
 .jumbotron .central-column .trial-button .trial-button__text span {
   font-size: 12px;
 }
-
 .jumbotron .central-column .trial-button .trial-button__icon {
   padding: 0 15px;
   font-size: 25px;
   vertical-align: middle;
 }
-
 .jumbotron .right-column {
   background-color: yellow;
   height: 100%;
   width: calc(100% / 3);
 }
-
+@media screen and (max-width: 992px) {
+  .jumbotron {
+    padding: 20px 10px;
+  }
+  .jumbotron .central-column {
+    width: 50%;
+    margin: auto;
+  }
+  .jumbotron .right-column {
+    width: 50%;
+  }
+}

@@ -1,0 +1,100 @@
+// JUMBOTRON
+.jumbotron {
+  height: $jumbotron-height;
+  background-image: url("../img/hero-painteressentials-7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 49%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 80px;
+  position: relative;
+
+  .jumbotron-credits {
+    font-size: $font-size-xxs;
+    position: absolute;
+    bottom: 20px;
+    left: 180px;
+  }
+  .central-column {
+    height: 100%;
+    width: 40%;
+    margin-right: 50px;
+    padding-top: 30px;
+
+    h1 {
+      font-size: 29px;
+      font-weight: 400;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      font-size: 22px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      font-size: $font-size-medium;
+
+      li {
+        margin-bottom: 10px;
+
+        span {
+          color: $color-grey;
+          font-weight: 700;
+          font-size: 20px;
+        }
+      }
+    }
+
+    .trial-button {
+      @include resetLink;
+      background-color: $trial-button;
+      display: inline-block;
+      padding: 10px 0;
+      margin-top: 20px;
+
+      .trial-button__text {
+        border-right: 1px solid $main-color;
+        padding: 0 15px;
+        display: inline-block;
+        vertical-align: middle;
+
+        p {
+          font-size: $text-small;
+          text-transform: uppercase;
+        }
+
+        span {
+          font-size: $text-xs;
+        }
+      }
+
+      .trial-button__icon {
+        padding: 0 15px;
+        font-size: 25px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .right-column {
+    background-color: yellow;
+    height: 100%;
+    width: calc(100% / 3);
+  }
+
+  @media screen and (max-width: 992px) {
+    padding: 20px 10px;
+
+    .central-column {
+      width: 50%;
+      margin: auto;
+    }
+    .right-column {
+      width: 50%;
+    }
+  }
+}

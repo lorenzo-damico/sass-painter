@@ -4,6 +4,20 @@
   padding: 0;
 }
 
+// TYPO
 body {
   font-family: $mainFont;
+  color: $main-color;
+}
+
+a {
+  @include resetLink;
+}
+
+// CONTAINER
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 10px;
 }

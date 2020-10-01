@@ -1,133 +1,55 @@
-// HEADER TOP
-.header-top {
-  background-color: $headerTopColor;
-  height: $headerTopHeight;
-  color: $mainTextColor;
+.header {
+  background-color: $bg-dark;
 
-  .header-navbar {
-    font-size: $font-size-small;
-    width: 95%;
-    height: 100%;
-    max-width: 1200px;
-    margin: auto;
+  // HEADER TOP
+  .header-top {
+    background-color: green;
     display: flex;
-    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 10px 0;
+
+    .header-top--menu {
+      @include listInline;
+
+      li {
+        padding: 0 15px;
+
+        a {
+          color: $color-grey;
+          font-size: $text-xs;
+        }
+      }
+    }
+  }
+
+  // HEADER BOTTOM
+  .header-bottom {
+    display: flex;
+    align-items: center;
 
     .logo {
-      margin-right: 60px;
-      margin-bottom: 20px;
+      margin-right: 20px;
 
       img {
         width: 90px;
       }
     }
 
-    .header-menu {
+    .header-bottom--menu {
       @include listInline;
-      width: 100%;
-      justify-content: flex-start;
 
       a {
-        @include resetLink;
+        font-size: $text-small;
         padding: 20px;
         display: inline-block;
 
         i {
           vertical-align: middle;
           color: $color-grey;
-          }
-      }
-
-    }
-  }
-}
-
-// JUMBOTRON
-.jumbotron {
-  height: $jumbotron-height;
-  color: $mainTextColor;
-  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 53%;
-  display: flex;
-  justify-content: flex-end;
-  padding: 20px 80px;
-  position: relative;
-
-  .jumbotron-credits {
-    font-size: $font-size-xxs;
-    position: absolute;
-    bottom: 30px;
-    left: 130px;
-  }
-  .central-column {
-    height: 100%;
-    width: 40%;
-    margin-right: 50px;
-    padding-top: 30px;
-
-    h1 {
-      font-size: 29px;
-      font-weight: 400;
-      margin-bottom: 15px;
-    }
-
-    h3 {
-      font-size: 22px;
-      font-weight: 400;
-      margin-bottom: 20px;
-    }
-
-    ul {
-      list-style: none;
-      font-size: $font-size-medium;
-
-      li {
-        margin-bottom: 10px;
-
-        span {
-          color: $color-grey;
-          font-weight: 700;
-          font-size: 20px;
-        }
-      }
-    }
-
-    .trial-button {
-      @include resetLink;
-      background-color: $trial-button;
-      display: inline-block;
-      padding: 10px 0;
-      margin-top: 20px;
-
-      .trial-button__text {
-        border-right: 1px solid $mainTextColor;
-        padding: 0 15px;
-        display: inline-block;
-        vertical-align: middle;
-
-        p {
-          font-size: $font-size-small;
-          text-transform: uppercase;
-        }
-
-        span {
-          font-size: $font-size-xs;
         }
       }
 
-      .trial-button__icon {
-        padding: 0 15px;
-        font-size: 25px;
-        vertical-align: middle;
-      }
     }
-  }
 
-  .right-column {
-    background-color: yellow;
-    height: 100%;
-    width: calc(100% / 3);
   }
 }
