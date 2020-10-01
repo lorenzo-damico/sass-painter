@@ -3,7 +3,6 @@
 
   // HEADER TOP
   .header-top {
-    background-color: green;
     display: flex;
     justify-content: flex-end;
     padding: 10px 0;
@@ -12,11 +11,23 @@
       @include listInline;
 
       li {
-        padding: 0 15px;
+        padding: 0 12px;
+
+        i {
+          color:$color-shop;
+          font-size: $text-small;
+          margin-right: 8px;
+          vertical-align: middle;
+        }
 
         a {
           color: $color-grey;
           font-size: $text-xs;
+
+          &:hover {
+            color: $main-color;
+            text-decoration: underline;
+          }
         }
       }
     }
@@ -37,11 +48,17 @@
 
     .header-bottom--menu {
       @include listInline;
+      flex-wrap: wrap;
 
       a {
         font-size: $text-small;
-        padding: 20px;
+        padding: 18px 24px;
         display: inline-block;
+
+        &:hover {
+          background-color: $main-color;
+          color: #000;
+        }
 
         i {
           vertical-align: middle;
