@@ -21,3 +21,19 @@ a {
   margin: auto;
   padding: 0 10px;
 }
+
+// BUTTONS
+.btn {
+  display: inline-block;
+  padding: 10px 50px;
+
+  &-shop {
+    background-color: $color-shop;
+    text-transform: uppercase;
+    font-size: $text-medium;
+
+    &:hover {
+      background-color: $color-shop-light;
+    }
+  }
+}

@@ -21,6 +21,19 @@ a {
   padding: 0 10px;
 }
 
+.btn {
+  display: inline-block;
+  padding: 10px 50px;
+}
+.btn-shop {
+  background-color: #009cff;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.btn-shop:hover {
+  background-color: #28acff;
+}
+
 .header {
   background-color: #101010;
 }
@@ -125,8 +138,6 @@ a {
   font-size: 20px;
 }
 .jumbotron .central-column .trial-button {
-  text-decoration: none;
-  color: #fff;
   background-color: #5D5C59;
   display: inline-block;
   padding: 10px 0;
@@ -151,9 +162,52 @@ a {
   vertical-align: middle;
 }
 .jumbotron .right-column {
-  background-color: yellow;
+  background-color: rgba(0, 0, 0, 0.9);
   height: 100%;
   width: calc(100% / 3);
+  padding: 50px 20px 0;
+  position: relative;
+}
+.jumbotron .right-column .logo-money {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+.jumbotron .right-column span {
+  display: block;
+}
+.jumbotron .right-column .price {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.jumbotron .right-column .download {
+  text-transform: uppercase;
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+.jumbotron .right-column .box-offer {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  margin-top: 40px;
+}
+.jumbotron .right-column .box-offer .limited-offer {
+  color: #2c2c2c;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.jumbotron .right-column .box-offer .free-animations {
+  color: #2c2c2c;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.jumbotron .right-column .box-offer a {
+  color: #009cff;
+  font-size: 14px;
+}
+.jumbotron .right-column .box-offer a:hover {
+  text-decoration: underline;
 }
 @media screen and (max-width: 992px) {
   .jumbotron {

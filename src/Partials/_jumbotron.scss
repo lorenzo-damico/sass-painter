@@ -11,7 +11,7 @@
   position: relative;
 
   .jumbotron-credits {
-    font-size: $font-size-xxs;
+    font-size: $text-xxs;
     position: absolute;
     bottom: 20px;
     left: 180px;
@@ -36,7 +36,7 @@
 
     ul {
       list-style: none;
-      font-size: $font-size-medium;
+      font-size: $text-medium;
 
       li {
         margin-bottom: 10px;
@@ -50,7 +50,6 @@
     }
 
     .trial-button {
-      @include resetLink;
       background-color: $trial-button;
       display: inline-block;
       padding: 10px 0;
@@ -81,9 +80,59 @@
   }
 
   .right-column {
-    background-color: yellow;
+    background-color: rgba(0, 0, 0, 0.9);
     height: 100%;
     width: calc(100% / 3);
+    padding: 50px 20px 0;
+    position: relative;
+
+    .logo-money {
+      position: absolute;
+      top: 20px;
+      right: 10px;
+    }
+    span {
+      display: block;
+    }
+    .price {
+      font-size: $text-xl;
+      margin-bottom: 10px;
+    }
+
+    .download {
+      text-transform: uppercase;
+      color: $color-grey;
+      font-size: $text-small;
+      margin-bottom: 25px;
+    }
+
+    .box-offer {
+      background-color: rgba(255,255,255,.9);
+      padding: 15px;
+      margin-top: 40px;
+
+      .limited-offer {
+        color: #2c2c2c;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-bottom: 5px;
+      }
+
+      .free-animations {
+        color: #2c2c2c;
+        font-size: $text-xs;
+        margin-bottom: 5px;
+      }
+
+      a {
+        color: $color-shop;
+        font-size: $text-small;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
   }
 
   @media screen and (max-width: 992px) {

@@ -2,10 +2,11 @@
 $mainFont: 'Roboto', sans-serif;
 
 // Font size
-$font-size-xxs: 10px;
+$text-xxs: 10px;
 $text-xs: 12px;
 $text-small: 14px;
-$font-size-medium: 16px;
+$text-medium: 16px;
+$text-xl: 25px;
 
 
 // Colori
@@ -13,6 +14,7 @@ $bg-dark: #101010;
 $main-color: #fff;
 $color-grey: #999;
 $color-shop: #009cff;
+$color-shop-light: #28acff;
 
 // Dimensioni
 $jumbotron-height: 470px;
